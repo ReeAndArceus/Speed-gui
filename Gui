@@ -1,0 +1,117 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+ 	Title = "LOADING MENU";
+ 	Text = "VERSION : 1.3";
+ 	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
+ Duration = 16; wait(3) 
+local ScreenGui = Instance.new("ScreenGui") 
+local main = Instance.new("Frame") 
+local title = Instance.new("TextLabel") 
+local On = Instance.new("TextButton") 
+local Off = Instance.new("TextButton") 
+local close = Instance.new("TextButton") 
+local openmain = Instance.new("Frame") 
+local open = Instance.new("TextButton") 
+ScreenGui.Parent = game.CoreGui 
+main.Name = "main" 
+main.Parent = ScreenGui 
+main.BackgroundColor3 = Color3.new(1, 2, 0) 
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0) 
+main.Size = UDim2.new(0, 332, 0, 211) 
+main.Visible = false 
+main.Active = true 
+main.Draggable = true 
+title.Name = "title" 
+title.Parent = main title.BackgroundColor3 = Color3.new(0, 0, 0) 
+title.Size = UDim2.new(0, 332, 0, 31) 
+title.Font = Enum.Font.GothamBold 
+title.Text = "LEGEND OF SPEED V1.3" 
+title.TextColor3 = Color3.new(1, 1, 0.975) 
+title.TextSize = 15 
+On.Name = "On" 
+On.Parent = main 
+On.BackgroundColor3 = Color3.new(0,128,0) 
+On.Position = UDim2.new(0.036144577, 0, 0.379146934, 0) 
+On.Size = UDim2.new(0, 110, 0, 50) 
+On.Font = Enum.Font.GothamBold 
+On.Text = "(ON 1)" On.TextColor3 = Color3.new(0, 0, 0) 
+On.TextScaled = true 
+On.TextSize = 9 
+On.TextWrapped = true On.MouseButton1Down:connect(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ReeAndArceus/Legends-Of-speed-1/main/1"))() end) 
+On.MouseButton1Down:connect(function() 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+ 	Title = "Executed"; 	Text = "👀 (ON)";
+ 	Icon = "rbxthumb://type=Asset&id=6492020716&w=150&h=150"})
+ Duration = 16; end) 
+Off.Name = "Off" 
+Off.Parent = main 
+Off.BackgroundColor3 = Color3.new(0,128,0) 
+Off.Position = UDim2.new(0.614457846, 0, 0.379146934, 0) 
+Off.Size = UDim2.new(0, 110, 0, 50) 
+Off.Font = Enum.Font.GothamBold 
+Off.Text = "(ON 2)" Off.TextColor3 = Color3.new(0, 0, 0) 
+Off.TextScaled = true 
+Off.TextSize = 14 
+Off.TextWrapped = true 
+Off.MouseButton1Down:connect(function() 
+game.StarterGui:SetCore("SendNotification", {
+ Title = "LAUNCHING GAME...";
+ Text = "MADE BY Ree ENJOY ;)";
+ Duration = 60; })
+ game.StarterGui:SetCore("SendNotification", {
+ Title = "VERSION 1.2";
+ Text = "ONLY IN MOBILE & PC ✅";
+ Button1 = "📱"; Button2 = "🖥️";
+ Duration = 60; }) 
+game.StarterGui:SetCore("SendNotification", {
+ Title = "TARGET : GAME";
+ Text = "LEGEND OF SPEED";
+ Duration = 60; }) 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ReeAndArceus/Legends-of-Speed-2/main/2"))() end) 
+Off.MouseButton1Down:connect(function() 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+ 	Title = "EXECUTED";
+ 	Text = "👀 (ON)";
+ 	Icon = "rbxthumb://type=Asset&id=6492020716&w=150&h=150"}
+   Duration = 16;
+ end) 
+close.Name = "close" 
+close.Parent = main 
+close.BackgroundColor3 = Color3.new(1, 1, 1) 
+close.Position = UDim2.new(0.879518092, 0, 0, 0) 
+close.Size = UDim2.new(0, 40, 0, 31) 
+close.Font = Enum.Font.GothamBlack 
+close.Text = "X" 
+close.TextColor3 = Color3.new(0, 0, 0) 
+close.TextScaled = true 
+close.TextSize = 14 
+close.TextWrapped = true 
+close.MouseButton1Down:connect(function() 
+main.Visible = false 
+openmain.Visible = true end) 
+openmain.Name = "openmain" 
+openmain.Parent = ScreenGui 
+openmain.BackgroundColor3 = Color3.new(1, 1, 1) 
+openmain.Position = UDim2.new(.001, 0, .79, 0) 
+openmain.Size = UDim2.new(0, 100, 0, 28) 
+openmain.Active = true 
+openmain.Draggable = true 
+open.Name = "open" open.Parent = 
+openmain open.BackgroundColor3 = Color3.new(1, 1, 1) 
+open.Size = UDim2.new(0, 100, 0, 28) 
+open.Font = Enum.Font.GothamBold 
+open.Text = "OPEN GUI" 
+open.TextColor3 = Color3.new(0, 0, 0) 
+open.TextSize = 18 
+open.TextWrapped = true 
+open.MouseButton1Down:connect(function() 
+openmain.Visible = false 
+main.Visible = true end) 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+ 	Title = "LOS MENU GUI..."; 	Text = "Thanks For Using";
+ 	Icon = "rbxthumb://type=Asset&id=15533743&w=150&h=150"})
+ Duration = 16;
+ game:GetService("StarterGui"):SetCore("SendNotification", {
+ 	Title = "🔨BUGS";
+ 	Text = "(If The Script Is Not Working Please Dm Me In Discord.)";
+ 	Icon = "rbxthumb://type=Asset&id=5839962783&w=150&h=150"})
+ Duration = 16;
